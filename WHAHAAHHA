@@ -1,0 +1,19 @@
+# ======================
+# writingonfile.py
+# Mark Balagtas
+# Writing in external files with user intput and static input
+# ======================
+
+# ========= funcs
+
+def main():
+    file = open('thingsyouwrote.txt', 'w')
+    print('File opened')
+    file.write("Things you wrote: ")
+    write = input("What would you like to write? \n")
+    file.write(write)
+    file.close()
+    print("File closed")
+
+# ========== main
+main()
